@@ -9,17 +9,19 @@ public class App
         Scanner scanner = new Scanner(System.in);
 
      
-        String name = scanner.nextLine();
+        System.out.println("Give the first number:");
+        int first = Integer.valueOf(scanner.nextLine());
+        System.out.println("Give the second number:");
+        int second = Integer.valueOf(scanner.nextLine());
 
-     
-        String surname = scanner.nextLine();
-
-        
-        String group = scanner.nextLine();
-
-        
-        System.out.println("Students: " + name + " " + surname + "Grupa: " + group );
-
+        double result = first + second;
+        System.out.println(first + " + " + second + " = " + result);
+        double result2 = first - second;
+        System.out.println(first + " - " + second + " = " + result2);
+        double result3 = first * second;
+        System.out.println(first + " * " + second + " = " + result3);
+        double result4 = first / second;
+        System.out.println(first + " / " + second + " = " + result4);
         
         // code ends
         
