@@ -20,7 +20,7 @@ public class App
         System.out.println(first + " - " + second + " = " + result2);
         double result3 = first * second;
         System.out.println(first + " * " + second + " = " + result3);
-        double result4 = first / second;
+        double result4 = (double)first / second;
         System.out.println(first + " / " + second + " = " + result4);
         
         // code ends
