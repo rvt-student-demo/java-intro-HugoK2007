@@ -9,6 +9,8 @@ public class App
             Scanner scanner = new Scanner(System.in);
             
           
+            int sum = 0;
+            
             System.out.println("Give numbers:");
             while (true) {
                 int num = scanner.nextInt();
@@ -18,10 +20,15 @@ public class App
                     break;
                 }
     
+                sum += num;
+                
+               
+                
     
             }
     
-  
+            System.out.println("Sum: " + sum);
+          
         }
     }
            
