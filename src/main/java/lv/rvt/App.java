@@ -9,36 +9,16 @@ public class App
             Scanner scanner = new Scanner(System.in);
             
           
-            int sum = 0;
-            int count = 0;
-            int even = 0;
-            int odd = 0;
-            double avg = 0;
-            System.out.println("Give numbers:");
-            while (true) {
-                int num = scanner.nextInt();
+            System.out.println("How many times?");
+            int amount = scanner.nextInt();
     
-                if (num == -1) {
-                    System.out.println("Thx! Bye!");
-                    break;
-                }
-    
-                sum += num;
-                count++;
-                avg = (double) sum / count;
-                if (num % 2 == 0) {
-                    even++;
-                } else {
-                    odd++;
-                }
-    
+            for (int i = 0; i < amount; i++) {
+                printText();
             }
+        }
     
-            System.out.println("Sum: " + sum);
-            System.out.println("Numbers: " + count);
-            System.out.println("Average: " + avg);
-            System.out.println("Even: " + even);
-            System.out.println("Odd: " + odd);
+        public static void printText() {
+            System.out.println("In a hole in the ground there lived a method");
         }
     }
         
