@@ -7,16 +7,26 @@ public class App
 
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
-            System.out.println("Give a number:");
-            int num = scanner.nextInt();
+            
+          
+            System.out.println("Give numbers:");
+            while (true) {
+                int num = scanner.nextInt();
     
-            int fact = 1;
-            for (int i = 1; i <= num; i++) {
-                fact = i * fact;
+                if (num == -1) {
+                    System.out.println("Thx! Bye!");
+                    break;
+                }
+    
+    
             }
-            System.out.println("Factorial: " + fact);
+    
+  
         }
     }
+           
+        
+    
     
 
    
