@@ -5,24 +5,45 @@ import java.util.*;
 public class App 
 {
 
-        public static void main(String[] args) {
-            Scanner scanner = new Scanner(System.in);
-            
-        int n1 = scanner.nextInt();
-        int n2 = scanner.nextInt();
+    public static void main(String[] args) {
 
-        divisibleByThreeInRange(n1, n2);
-
+        printStars(3);
+        System.out.println("\n---");  
+        printSquare(4);
+        System.out.println("\n---");
+        printRectangle(5, 6);
+        System.out.println("\n---");
+        printTriangle(3);
+        System.out.println("\n---");
     }
 
-    public static void divisibleByThreeInRange(int beginning, int end) {
-        for (int i = beginning; i <= end; i++) {
-            if (i % 3 == 0) {
-                System.out.println(i);
-            }
+    public static void printStars(int number) {
+        for (int i = 0; i < number; i++) {
+            System.out.print("*");
+        }
+        System.out.println();
+    }
+
+    public static void printSquare(int size) {
+        for (int i = 0; i < size; i++) {
+            printStars(size);
+        }
+    }
+
+    public static void printRectangle(int width, int height) {
+        for (int i = 0; i < height; i++) {
+            printStars(width);
+        }
+    }
+
+    public static void printTriangle(int size) {
+        for (int i = 1; i <= size; i++) {
+            printStars(i);
         }
     }
 }
+ 
+
         
     
     
