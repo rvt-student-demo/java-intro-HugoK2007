@@ -5,18 +5,6 @@ import java.util.*;
 public class App 
 {
 
-    public static void main(String[] args) {
-
-        printStars(3);
-        System.out.println("\n---");  
-        printSquare(4);
-        System.out.println("\n---");
-        printRectangle(5, 6);
-        System.out.println("\n---");
-        printTriangle(3);
-        System.out.println("\n---");
-    }
-
     public static void printStars(int number) {
         for (int i = 0; i < number; i++) {
             System.out.print("*");
@@ -24,31 +12,35 @@ public class App
         System.out.println();
     }
 
-    public static void printSquare(int size) {
-        for (int i = 0; i < size; i++) {
-            printStars(size);
-        }
-    }
-
-    public static void printRectangle(int width, int height) {
-        for (int i = 0; i < height; i++) {
-            printStars(width);
-        }
-    }
-
     public static void printTriangle(int size) {
-        for (int i = 1; i <= size; i++) {
-            printStars(i);
+        for (int i = size; i > 0; i--) {
+            printSpaces(i - 1);
+            printStars(size - i + 1);
         }
+    }
+
+
+    public static void printSpaces(int number) {
+        for (int i = 1; i <= number; i++) {
+            System.out.print(" ");
+        }
+    }
+
+
+    public static void christmasTree(int height) {
+        for (int i = 1; i <= height; i++) {
+            printSpaces(height - i);
+            printStars(i * 2 - 1);
+        }
+        for (int i = 0; i < 2; i++) {
+            printSpaces(height - 2);
+            printStars(3);
+        }
+    }
+
+    public static void main(String[] args) {
+        // The tests are not checking the main, so you can modify it freely.
+
+        christmasTree(8);
     }
 }
- 
-
-        
-    
-    
-
-   
-        
-    
-
