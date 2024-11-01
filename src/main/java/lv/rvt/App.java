@@ -7,24 +7,23 @@ public class App
 
   public static void main ( String[] args )
   {
-    int[] valA   = { 13, -22,  82,  17}; 
-    int[] valB   = {  -10,   31,   -77,   -9};
+    int[] val = {0, 1, 2, 3}; 
+    int temp;
+ 
+    System.out.println( "Original Array: " 
+        + val[0] + " " + val[1] + " " + val[2] + " " + val[3] );
+ 
+    // reverse the order of the numbers in the array
+    for(int i = 0; i < val.length / 2; i++) {
+      // Swapping the elements
+      int j = val[i];
+      val[i] = val[val.length - i - 1];
+      val[val.length - i - 1] = j;
+  }
+ 
     
-    // Put values into valB so that the sum of the values
-    // in corresponding cells of valA and valB is 25.
-
-
-
  
- 
-    System.out.println( "valA: " 
-        + valA[0] + " " + valA[1] + " " + valA[2] + " " + valA[3] );
- 
-    System.out.println( "valB: " 
-        + valB[0] + " " + valB[1] + " " + valB[2] + " " + valB[3] );
-
-    System.out.println( "sum:  " 
-        + (valA[0]+valB[0]) + " " + (valA[1]+valB[1]) + " " 
-        + (valA[2]+valB[2]) + " " + (valA[3]+valB[3]) );
+    System.out.println( "Reversed Array: " 
+        + val[0] + " " + val[1] + " " + val[2] + " " + val[3] );
    }
 }
