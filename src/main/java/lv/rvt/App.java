@@ -7,19 +7,22 @@ public class App
 
   public static void main ( String[] args )
   {
-    int[] val = {0, 1, 2, 3}; 
-    int sum = 0;
-    int i;
-    for (i = 0; i < val.length; i++) {
-      sum += val[i];
+    int[] val = {13, -4, 82, 17}; 
+    int[] twice = {26, -8, 164, 34} ;
+    
 
-      
-
-    }
-
-     
+    System.out.println( "Original Array: " 
+        + val[0] + " " + val[1] + " " + val[2] + " " + val[3] );
  
-    System.out.println( "Sum of all numbers = " + sum );
+    // Construct an array object for twice.
+
+    
+    // Put values in twice that are twice the
+    // corresponding values in val.
+
+
  
+    System.out.println( "New Array: " 
+        + twice[0] + " " + twice[1] + " " + twice[2] + " " + twice[3]  );
    }
 }
