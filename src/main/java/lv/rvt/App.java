@@ -7,22 +7,17 @@ public class App
 
   public static void main ( String[] args )
   {
-    int[] val = {13, -4, 82, 17}; 
-    int[] twice = {26, -8, 164, 34} ;
+    int[] valA   = { 13, -22,  82,  17}; 
+    int[] valB   = {-12,  24, -79, -13};
+    int[] sum    = {  1,   2,   3,   4};
     
+    // Add values from corresponding cells of valA and valB
+    // and put the result in the corresponding cell of sum.
 
-    System.out.println( "Original Array: " 
-        + val[0] + " " + val[1] + " " + val[2] + " " + val[3] );
- 
-    // Construct an array object for twice.
-
-    
-    // Put values in twice that are twice the
-    // corresponding values in val.
 
 
  
-    System.out.println( "New Array: " 
-        + twice[0] + " " + twice[1] + " " + twice[2] + " " + twice[3]  );
+    System.out.println( "sum: " 
+        + sum[0] + " " + sum[1] + " " + sum[2] + " " + sum[3] );
    }
 }
