@@ -4,8 +4,16 @@ import java.util.*;
 
 public class App 
 {
+        
     public static void main(String[] args) {
-        Product mansProd1 = new Product("banana");
-        mansProd1.printProduct();
+        DecreasingCounter counter = new DecreasingCounter(10);
+
+        counter.printValue();
+
+        counter.reset();
+        counter.printValue();
+
+        counter.decrement();
+        counter.printValue();
     }
 }
